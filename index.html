@@ -1,23 +1,345 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ryan scanlan | sup?</title>
+    <meta name="description" content="ryan scanlan | sup?">
+    <meta name="author" content="Ryan Scanlan">
+    <meta name="keywords" content="Ryan, Scanlan, data, consultant, consulting, sports, sponsorship, CAA, agency, research">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="home">
+    <link href=site.css rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href=normalize.css type="text/css">
+    <link rel="stylesheet" href=skeleton.css type="text/css">
+    <link rel="stylesheet" href=spinner.css type="text/css">
+    <link rel="stylesheet" href=main_new.css type="text/css"/>
 
-  <h1 class="page-heading">Posts</h1>
+    <link rel="icon" href=/static/favicon.ico>
+</head>
+<body>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <h1 class="text-center">Ryan Scanlan</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <h5 class="text-center">data consulting + sports business</h5>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <div class="navbar-spacer"></div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- Smaller screen nav -->
+    <nav class="navbar-small">
+        <div class="container">
+            <div class="row">
+                <div class="two columns">
+                    <a class="navbar-link" href="#content-home"><p class="text-center">background</p></a>
+                </div>
+                <!--<div class="two columns">
+                    <a class="navbar-link" href="#content-development"><p class="text-center">projects</p></a>
+                </div>-->
+                <div class="two columns">
+                    <a class="navbar-link" href="#content-resume"><p class="text-center">r&eacute;sum&eacute;</p></a>
+                </div>
+                <div class="two columns">
+                    <a class="navbar-link" href="#content-contact"><p class="text-center">contact</p></a>
+                </div>
 
-</div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bigger screen nav -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+            <ul class="navbar-list center">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#content-home">background</a>
+                </li>
+                <!--<li class="navbar-item">
+                    <a class="navbar-link" href="#content-development">projects</a>
+                </li>-->
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#content-resume">r&eacute;sum&eacute;</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#content-contact">contact</a>
+                </li>
+
+
+
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content sections -->
+    <section id="content-home">
+        <div class="container">
+
+            <h2>..whatuppp....</h2>
+            <br>
+            <br>
+            <img src="pic.jpeg" />
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 class="section-title">about me</h4>
+                    <div class="line"></div>
+                    <p class="text-center">
+                        I am a research executive and data consultant with a background in sports business and sponsorship strategy.
+                    </p>
+                    <p class="text-center">
+                        MN > CT > NYC. Reader, writer, politics nerd, sports fan, data junkie, okay programmer (excellent googler), mediocre surfer.
+                    </p>
+                    <p class="text-center">
+                        I enjoy using data and data models to tell stories and negotiate deals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section id="content-development">
+        <div class="container">
+            <h2>projects</h2>
+
+            <div class="row">
+                <div class="offset-by-three two columns"><a href="#development-brainsparks" class="text-center blue"><p>brainsparks &amp; calrissian</p></a></div>
+                <div class="two columns"><a href="#development-mathworkers" class="text-center blue"><p>parallel math library</p></a></div>
+                <div class="two columns"><a href="#development-cassandra" class="text-center blue"><p>data network modeling</p></a></div>
+            </div>
+            <div class="row">
+                <div class="offset-by-three three columns"><a href="#development-scaling" class="text-center blue"><p>massively parallel computing</p></a></div>
+                <div class="three columns"><a href="#development-genetic" class="text-center blue"><p>genetic algorithm load balancer</p></a></div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 id="development-brainsparks" class="section-title">freddy &amp; oops</h4>
+                    <div class="line"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <p>Coming soon. Code on GitHub.</p>
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        Coming soon. Just working out some kinks.
+                    </p>
+                    <a href="" target="_blank" class="center blue">
+                        <button>TEXT TEXT TEXT</button>
+                    </a>
+                </div>
+            </div>
+    -->
+    <section id="content-resume">
+        <div class="container">
+            <h2>r&eacute;sum&eacute;</h2>
+
+            <div class="row">
+                <div class="offset-by-three two columns"><a href="#resume-employment" class="text-center blue"><p>employment</p></a></div>
+                <div class="two columns"><a href="#resume-education" class="text-center blue"><p>education</p></a></div>
+                <div class="two columns"><a href="#resume-skills" class="text-center blue"><p>skills</p></a></div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <h4 id="resume-employment" class="section-title">employment</h4>
+                        <div class="line"> </div>
+                    </div>
+                </div>
+
+                <!-- === -->
+
+                <div class="row">
+                    <div class="twelve columns">
+                        <p>
+                            <strong>Research Executive, CAA Sports</strong>
+                            <span class="u-pull-right">Jan 2016 &mdash; Present</span>
+                            <br>
+                            <span class="italic">Creative Artists Agency</span>
+                            <span class="italic u-pull-right">New York, NY</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <ul>
+                            <li>Consult with brand, property, and talent clients on data/analytics initiatives related to deal negotiation, market strategy, and ROI measurement in the sports and entertainment space.</li>
+                            <li>Conduct customized research studies including survey design and administration, social listening analysis, and market research using syndicated consumer data.</li>
+                            <li>Develop dynamic data tools and dashboards for navigating sponsorship performance KPIs, marketing activation results, and business intelligence metrics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- === -->
+
+                <div class="row">
+                    <div class="twelve columns">
+                        <p>
+                            <strong>Data Analyst</strong>
+                            <span class="u-pull-right">August 2014 &mdash; Dec 2015</span>
+                            <br>
+                            <span class="italic">Nippon Express (USA)</span>
+                            <span class="italic u-pull-right">New York, NY</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <ul>
+                            <li>Led NAM regional response to multi-million dollar global logistics RFI’s and RFP’s from top manufacturers and retailers in conjunction with international counterparts.</li>
+                            <li>Utilized Excel, R Studio, and SQL to assemble, clean, analyze, and database routing and pricing data for use in NAM logistics strategy.</li>
+                            <li>Performed (pseudo-) forensic accounting work to resolve AP/AR discrepancies with major client accounts and open invoices.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- === -->
+
+                <div class="row">
+                    <div class="twelve columns">
+                        <p>
+                            <strong>Production/Ops Assistant</strong>
+                            <span class="u-pull-right">June 2010 &mdash; August 2014</span>
+                            <br>
+                            <span class="italic">ESPN</span>
+                            <span class="italic u-pull-right">Northeast US</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <ul>
+                            <li>Provided on-site administrative, utility, and event support for ESPN remote productions of MLB, NCAA, and MLS broadcast events in the NYC/ CT/ BOS areas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <h4 id="resume-education" class="section-title">education</h4>
+                        <div class="line"> </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <p>
+                            <strong>B.A. International Studies, focus on Political Economy</strong>
+                            <span class="u-pull-right">August 2007 &mdash; May 2011</span>
+                            <br>
+                            <span class="italic">Fordham University</span>
+                            <span class="u-pull-right italic">New York, NY</span>
+                        </p>
+                    </div>
+                </div>
+                <!--
+                <div class="row">
+                    <div class="twelve columns">
+                        <strong>Formal Courses:</strong>
+                        <br>
+                        <ul>
+                            Class A, Class B, Class C, etc.
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <strong>Supplementary Online Courses:</strong>
+                        <br>
+                        <ul>
+                            <li><strong>Udacity</strong>: Web Development, Programming Languages, Parallel Programming (GPU/CUDA), Machine Learning, Artifical Intelligence</li>
+                            <li><strong>Coursera</strong>: Data Science Signature Track (R Programming, Statistics, Data Wrangling), Machine Learning, Algorithms, Databases, Neural Networks</li>
+                        </ul>
+                    </div>
+                </div>
+                -->
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <h4 id="resume-skills" class="section-title">technical skills</h4>
+                        <div class="line"> </div>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Proficiency in ~descending order from left to right</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Programming/ Data/ Web</td>
+                            <td>Excel, Python, R, R Studio, Power BI, HTML, CSS/SCSS, MySQL</td>
+                        </tr>
+                        <tr>
+                            <td>Tools/ Services</td>
+                            <td>Crimson Hexagon, GFK MRI (MEMRI Crosstabulation), Nielsen, Scarborough, Hookit, MVPindex, CrowdTangle, Tubular Labs, Demographics Pro, Cision</td>
+                        </tr>
+                        <tr>
+                            <td>Languages</td>
+                            <td>English, Spanish, some French</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+    </section>
+
+    <section id="content-contact">
+        <div class="container">
+            <h2>contact</h2>
+            <br>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <p class="text-center"><a href="mailto:McCheese@protonmail.com" target="_blank" class="blue">McCheese@protonmail.com</a></p>
+                    <p class="text-center"><a href="https://twitter.com/mccheezus" target="_blank" class="blue">@McCheezus</a></p>
+                </div>
+            </div>
+
+            <div class="spacer-big"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <img src=dagaz-rune-of-the-vikings.png class="icon center" alt="<rune>"/>
+                    <p class="text-center footnote">Ryan Scanlan 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
